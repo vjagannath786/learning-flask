@@ -5,7 +5,7 @@ import cx_Oracle
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://localhost/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://postgres:tiger@localhost/postgres'
 db.init_app(app)
 
 app.secret_key = "development=key"
